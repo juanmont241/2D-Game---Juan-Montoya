@@ -54,7 +54,7 @@
             // 
             this.scoreLabel.AutoSize = true;
             this.scoreLabel.BackColor = System.Drawing.Color.Silver;
-            this.scoreLabel.Location = new System.Drawing.Point(19, 11);
+            this.scoreLabel.Location = new System.Drawing.Point(18, 36);
             this.scoreLabel.Name = "scoreLabel";
             this.scoreLabel.Size = new System.Drawing.Size(35, 13);
             this.scoreLabel.TabIndex = 1;
@@ -64,7 +64,7 @@
             // 
             this.livesLabel.AutoSize = true;
             this.livesLabel.BackColor = System.Drawing.Color.Silver;
-            this.livesLabel.Location = new System.Drawing.Point(481, 11);
+            this.livesLabel.Location = new System.Drawing.Point(479, 36);
             this.livesLabel.Name = "livesLabel";
             this.livesLabel.Size = new System.Drawing.Size(35, 13);
             this.livesLabel.TabIndex = 2;
@@ -78,6 +78,7 @@
             this.Controls.Add(this.livesLabel);
             this.Controls.Add(this.scoreLabel);
             this.Controls.Add(this.label1);
+            this.DoubleBuffered = true;
             this.Name = "GameScreen";
             this.Size = new System.Drawing.Size(530, 530);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.GameScreen_Paint);

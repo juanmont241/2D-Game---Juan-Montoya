@@ -54,30 +54,12 @@ namespace _2D_Game___Juan_Montoya
             y = randGen.Next(40, screenSize.Height - 40);
             robotCakebear = new Player(x, y); //Setting the varaibles for the player (postion)
 
-            if (difficuly == 4) //Using the difficuly varaibles from Menuscreen, we determine how much children will be added to "littlechild" list
-            {
-                for (int i = 3; i > difficuly; i--)
-                {
-                    NewChild();
-                }
-            }
+            //Using the difficuly varaibles from Menuscreen, we determine how much children will be added to "littlechild" list
 
-            if (difficuly == 7)
+            for (int i = 0; i < difficuly; i++)
             {
-                for (int i = 6; i > difficuly; i--)
-                {
-                    NewChild();
-                }
+                NewChild();
             }
-
-            if (difficuly == 10)
-            {
-                for (int i = 9; i > difficuly; i--)
-                {
-                    NewChild();
-                }
-            }
-
         }
 
         public void NewChild()
@@ -89,20 +71,12 @@ namespace _2D_Game___Juan_Montoya
             Children c = new Children(x, y, size); //Using the Children Class to make a new child
             littleChild.Add(c); //Add the child to the "littlechild" list
 
-            patienceTimer = randGen.Next(500, 1500); //Declaring which timer does each child start with (Remember 10sec x 50. Time ticks more faster thanks to Interval = 20)
+            patienceTimer = randGen.Next(500, 1500); //Declaring which timer does each child start with
+            //(Remember 10sec x 50. Time ticks more faster thanks to Interval = 20)
             c.rest = patienceTimer; //Adds the random start times to each child in the list
             //(This line of code sets how long each child waits until they become unpatience)
 
-            foreach (Children c in littleChild) //For each child in the list
-            {
-                c.rest--; //Lower the timer in each child
-
-                if (c.rest == 0) //if the child's patiences reaches 0, then the player loses a life and the timer rests to a random number
-                {
-                    lives--;
-                    c.rest = patienceTimer;
-                }
-            }
+       
 
             
         }
@@ -168,19 +142,29 @@ namespace _2D_Game___Juan_Montoya
                 robotCakebear.Move("down", screenSize);
             }
 
-            if (hungryChild.Collision(robotCakebear)) //What happens when the player collisions with a child (Using the collision behavior in the player class)
-            {
-                c.rest = patienceTimer; //Restarts the child's timer to a random number
-                score++; //Contines to add the score as long as the player keeps giving the child cake
-            }
+          //  if (hungryChild.Collision(robotCakebear)) //What happens when the player collisions with a child (Using the collision behavior in the player class)
+        //    {
+          //      c.rest = patienceTimer; //Restarts the child's timer to a random number
+         //       score++; //Contines to add the score as long as the player keeps giving the child cake
+          //  }
 
+            foreach (Children c in littleChild) //For each child in the list
+            {
+                c.rest--; //Lower the timer in each child
+
+                if (c.rest == 0) //if the child's patiences reaches 0, then the player loses a life and the timer rests to a random number
+                {
+                    lives--;
+                    c.rest = patienceTimer;
+                }
+            }
 
             foreach (Children c in littleChild) //For each child in the list
             {
                 if (c.Collision(robotCakebear)) //If a child collides with the player
                 {
                     c.rest = patienceTimer; //
-                    score++; 
+                    score++;
 
                     if (lives == 0) //if they are no more lives then the game ends and sends the player to the GameOverscreen
                     {
@@ -190,7 +174,7 @@ namespace _2D_Game___Juan_Montoya
                 }
             }
 
-          
+
             Refresh();
         }
 
@@ -201,7 +185,7 @@ namespace _2D_Game___Juan_Montoya
 
             foreach (Children c in littleChild) //For each child on the list
             {
-                if (c.rest < 1000) //Changing each child's colour if they reach certain time laps (Less than 20 seconds)
+                if (c.rest < 1500 && c.rest > 750) //Changing each child's colour if they reach certain time laps (Less than 20 seconds)
                 {
                     e.Graphics.FillEllipse(Brushes.Green, c.x, c.y, c.size, c.size);
                 }

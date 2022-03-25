@@ -28,16 +28,20 @@ namespace _2D_Game___Juan_Montoya
 
             if (childRec.IntersectsWith(playerRec))
             {
+                y = p.y - size;
+            }
+            else
+            {
+                y = p.y + p.height;
+            }
 
                 return true;
             }
 
-
             return false;
 
         }
-    }
-    }
+}
 
 //Things to ask:
 // Add Collision with child and robot
