@@ -94,6 +94,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -107,6 +108,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FNAF_1_DEATH_STATIC.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The_Heavy_eating_his_Sandvich.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button_Click_sound_effect.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wrong Buzzer - Sound Effect.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MISS! %28Mario Party 1%29.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

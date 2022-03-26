@@ -15,6 +15,10 @@ namespace _2D_Game___Juan_Montoya
         public Form1()
         {
             InitializeComponent();
+
+            FormBorderStyle = FormBorderStyle.None; //Makes the form to fullscreen
+            WindowState = FormWindowState.Maximized;
+
             ChangeScreen(this, new MenuScreen()); //When the program starts, it instaly changes the screen to Menuscreen
         }
 
@@ -32,8 +36,7 @@ namespace _2D_Game___Juan_Montoya
                 f.Controls.Remove(current);                 
             }
 
-            next.Location = new Point((f.ClientSize.Width - next.Width) / 2,
-            (f.ClientSize.Height - next.Height) / 2);
+            next.Location = new Point((f.ClientSize.Width - next.Width) / 2, (f.ClientSize.Height - next.Height) / 2);
             f.Controls.Add(next);
             next.Focus();
         }

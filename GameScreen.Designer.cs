@@ -52,21 +52,23 @@
             // 
             // scoreLabel
             // 
-            this.scoreLabel.AutoSize = true;
-            this.scoreLabel.BackColor = System.Drawing.Color.Silver;
-            this.scoreLabel.Location = new System.Drawing.Point(18, 36);
+            this.scoreLabel.BackColor = System.Drawing.Color.Black;
+            this.scoreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scoreLabel.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.scoreLabel.Location = new System.Drawing.Point(14, 23);
             this.scoreLabel.Name = "scoreLabel";
-            this.scoreLabel.Size = new System.Drawing.Size(35, 13);
+            this.scoreLabel.Size = new System.Drawing.Size(127, 39);
             this.scoreLabel.TabIndex = 1;
             this.scoreLabel.Text = "label2";
             // 
             // livesLabel
             // 
-            this.livesLabel.AutoSize = true;
-            this.livesLabel.BackColor = System.Drawing.Color.Silver;
-            this.livesLabel.Location = new System.Drawing.Point(479, 36);
+            this.livesLabel.BackColor = System.Drawing.Color.Black;
+            this.livesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.livesLabel.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.livesLabel.Location = new System.Drawing.Point(399, 23);
             this.livesLabel.Name = "livesLabel";
-            this.livesLabel.Size = new System.Drawing.Size(35, 13);
+            this.livesLabel.Size = new System.Drawing.Size(116, 39);
             this.livesLabel.TabIndex = 2;
             this.livesLabel.Text = "label2";
             // 

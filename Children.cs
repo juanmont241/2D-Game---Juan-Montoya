@@ -10,10 +10,11 @@ namespace _2D_Game___Juan_Montoya
 
     internal class Children
     {
-        public int size;
+        public int size; //Set the Child's size and postion in Gamescreen
         public int x, y;
 
-        public int rest = 0;
+        public int rest = 0; //Make the rest varaible (How long the children wait until they get too impatience
+
         public Children(int _x, int _y, int _size)
         {
             x = _x;
@@ -21,29 +22,21 @@ namespace _2D_Game___Juan_Montoya
             size = _size;
         }
 
-        public bool Collision(Player p)
+        public bool Collision(Player p) //Makes a rectangle around the player and children for Collision
         {
             Rectangle childRec = new Rectangle(x, y, size, size);
             Rectangle playerRec = new Rectangle(p.x, p.y, p.width, p.height);
 
-            if (childRec.IntersectsWith(playerRec))
+            if (childRec.IntersectsWith(playerRec)) //It doesn't seem like I need to add anything in this if statement. Although its still needed in order
+                                                    //for the Collision behaviour to work.
             {
-                y = p.y - size;
-            }
-            else
-            {
-                y = p.y + p.height;
-            }
-
                 return true;
             }
 
             return false;
-
         }
-}
 
-//Things to ask:
-// Add Collision with child and robot
-// Fix the Patience Issue
+    }
+    }
+
 

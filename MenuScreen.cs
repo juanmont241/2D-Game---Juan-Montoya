@@ -20,22 +20,22 @@ namespace _2D_Game___Juan_Montoya
 
         private void buttonEasy_Click(object sender, EventArgs e) // Button coding for the "Easy" Difficuly
         {
-           GameScreen.lives = 10; //Declare how much lives send to Gamescreen
-           GameScreen.difficuly = 4; //Declares the difficuly number (We use this number for a if statement)
-            Form1.ChangeScreen(this, new GameScreen()); //Change Screen from Menuscreen to Gamescreen
+           GameScreen.difficuly = 5; //Declares the difficuly number 
+           GameScreen.lives = 3; //Declares how mnay lives the player has
+           Form1.ChangeScreen(this, new GameScreen()); //Change Screen from Menuscreen to Gamescreen
         }
 
         private void buttonMedium_Click(object sender, EventArgs e) // Button coding for the "Medium" Difficuly
         {
+            GameScreen.difficuly = 10;
             GameScreen.lives = 5;
-            GameScreen.difficuly = 7;
             Form1.ChangeScreen(this, new GameScreen());
         }
 
         private void buttonHard_Click(object sender, EventArgs e) // Button coding for the "Hard" Difficuly
         {
-            GameScreen.lives = 3;
-            GameScreen.difficuly = 10;
+            GameScreen.difficuly = 15;
+            GameScreen.lives = 5;
             Form1.ChangeScreen(this, new GameScreen());
         }
 
