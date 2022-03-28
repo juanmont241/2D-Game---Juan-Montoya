@@ -22,8 +22,8 @@ namespace _2D_Game___Juan_Montoya
         private void buttonMenu_Click(object sender, EventArgs e) //Sends the player back to the main menu
         {
             Form1.ChangeScreen(this, new MenuScreen());
-            GameScreen.score = 0;
-            GameScreen.lives = 3; //Refreshing the varaibles so the game doesn't get stuck
+            GameScreen.score = 0;//Refreshing the varaibles so the game doesn't get stuck
+            GameScreen.lives = 3; 
            
         }
 

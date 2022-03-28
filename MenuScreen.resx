@@ -117,14 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="buttonMedium.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHAAAAB3CAYAAADb5cTzAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
-        MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAAsNAAALDQHtB8AsAAAGYUlE
+        MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAAsMAAALDAE/QCLIAAAGYUlE
         QVR4Xu3WwZHcNhAF0D26ykHooFAchANQEBuCgnIoDkAB6OCDDmuzdnaIwbwBAS6AAWiq6h3Ywya6P0ol
         vfz35+00NRZP82CxmW/fvnWhsw+KxWYUdgs6+6BYbEZht6CzD4rFZhR2Czr7oFhsRmG3oLMPisVmFHYL
         OvugWGxGYbegsw+KxWYUdgs6+6BYbEZht6CzD4rFZhR2Czr7oFhsRmG3oLMPisVmFHYLOvugWGxGYbeg
@@ -158,7 +155,7 @@
   <data name="buttonExit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHMAAABxCAYAAADmi5ztAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
-        MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAAsNAAALDQHtB8AsAAAFi0lE
+        MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAAsMAAALDAE/QCLIAAAFi0lE
         QVR4Xu3QQQ7YNgwEwBz7rzwuz07r+8hkSTGqCxmYywIWyf3xz/f7+t9geH0Tw+ubGF7fxPD6JobXNzG8
         vonh9U0Mr29ieH0Tw+ubGF7fxPD6JobXNzG8vonh9U0MS379+nX9S+qxgWGJlr3eqccGhiVa9nqnHhsY
         lmjZ6516bGBYomWvd+qxgWGJlr3eqccGhiVa9nqnHhsYlmjZ6516bGBYomWvd+qxgWGJlr3eqccGhiVa
@@ -188,7 +185,7 @@
   <data name="buttonEasy.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHIAAABxCAYAAAAJSffTAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
-        MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAAsOAAALDgFAvuFBAAAFJUlE
+        MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAAsNAAALDQHtB8AsAAAFJUlE
         QVR4Xu3WsZHkNhAF0DWVhQyFoIBkKgQFpBAUlgwZCuAkTq3Rh3s7HJLoJsDhVj3n16CB/nT24/+/b7dL
         YHibD8PbfBje5sPwNh+Gt/kwvM2H4W0+DG/zYXibD8PbfBje5sPwNh+Gt/kwvM2H4W0+DE/zz5+/D0fv
         HBDD06jIs+mdA2J4GhV5Nr1zQAxPoyLPpncOiGEJlTYT7XQihiVUzky004kYllA5M9FOJ2KYQmVcjfYu
@@ -217,7 +214,7 @@
   <data name="buttonHard.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHAAAABuCAYAAAD/PJegAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
-        MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAAsOAAALDgFAvuFBAAAE9UlE
+        MAAA6mAAADqYAAAXcJy6UTwAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAAsNAAALDQHtB8AsAAAE9UlE
         QVR4Xu3W240cNxAF0P10HgrSATg8h+MA1mp4PgjOcb9YLJI7LeAA0kVPkXX5o6/ff74fS2P4WAfDxzoY
         PtbB8LEOho91MHysg+FjHQwf62CY7vvXr+nonhNimE4FjqZ7TohhOhU4mu45IYbpVOBouueEGHalskpf
         X3/8AN69A4Zd6dFKLmQ13r0Dhl3p0UouZDXevQOGofRIe1zIatxFBwxD6ZH2uJDVuIsOGIbSI+1xIatx
@@ -242,6 +239,9 @@
         dPbn+Pr+F4TLhYAH66uLAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>27</value>
   </metadata>

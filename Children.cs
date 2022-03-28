@@ -27,8 +27,8 @@ namespace _2D_Game___Juan_Montoya
             Rectangle childRec = new Rectangle(x, y, size, size);
             Rectangle playerRec = new Rectangle(p.x, p.y, p.width, p.height);
 
-            if (childRec.IntersectsWith(playerRec)) //It doesn't seem like I need to add anything in this if statement. Although its still needed in order
-                                                    //for the Collision behaviour to work.
+            if (childRec.IntersectsWith(playerRec)) //If the child intersects with the player, turn on this behavior and sends the go ahead to the 
+                                                    //function at GameScreen
             {
                 return true;
             }

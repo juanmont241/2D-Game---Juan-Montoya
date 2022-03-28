@@ -20,7 +20,7 @@ namespace _2D_Game___Juan_Montoya
             y = _y;
         }
 
-        public void Move(string direction, Size ss) //Code for moving the player up, down, left, and right
+        public void Move(string direction, Size ss) //Code for moving the player up, down, left, and right while respecting the game's borders
         {
             if (direction == "left")
             {

@@ -85,7 +85,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(174, 112);
+            this.label3.Location = new System.Drawing.Point(164, 110);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(197, 39);
             this.label3.TabIndex = 10;
@@ -94,11 +94,11 @@
             // scoreLabel
             // 
             this.scoreLabel.AutoSize = true;
-            this.scoreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scoreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.scoreLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.scoreLabel.Location = new System.Drawing.Point(-7, 190);
+            this.scoreLabel.Location = new System.Drawing.Point(15, 193);
             this.scoreLabel.Name = "scoreLabel";
-            this.scoreLabel.Size = new System.Drawing.Size(212, 39);
+            this.scoreLabel.Size = new System.Drawing.Size(179, 33);
             this.scoreLabel.TabIndex = 11;
             this.scoreLabel.Text = "Game Score";
             // 

@@ -39,7 +39,6 @@ namespace _2D_Game___Juan_Montoya
         public GameScreen()
         {
             InitializeComponent();
-        
 
             SoundPlayer clickButton = new SoundPlayer(Properties.Resources.Button_Click_sound_effect); //Declaring the sound effects to varaibles
             SoundPlayer chlidEat = new SoundPlayer(Properties.Resources.The_Heavy_eating_his_Sandvich);
@@ -52,7 +51,7 @@ namespace _2D_Game___Juan_Montoya
 
             soundGame[0].Play(); //Plays when the player presses any button
 
-            InitializeGame();
+            InitializeGame(); //Initialize the Game (Starting Variables)
 
         }
 
@@ -79,7 +78,7 @@ namespace _2D_Game___Juan_Montoya
 
         public void NewChild()
         {
-            int x = randGen.Next(40, screenSize.Width - 40); //How to send info to children without declaring theses lines of code again?
+            int x = randGen.Next(40, screenSize.Width - 40); //Setting the postion and size for each child
             int y = randGen.Next(40, screenSize.Height - 40);
             int size = 10;
 
@@ -136,7 +135,8 @@ namespace _2D_Game___Juan_Montoya
         {
             if (leftArrowDown == true) //Code for moving the player using the "Move" behavior from the Player class
             {
-                robotCakebear.Move("left", screenSize); //screenSize is used to determine where the player is (to be up to date)
+                robotCakebear.Move("left", screenSize); //screenSize is used to determine where the player is (to be up to date and for the player to not go
+                                                        //through the border)
             }
 
             if (rightArrowDown == true)
@@ -191,12 +191,12 @@ namespace _2D_Game___Juan_Montoya
 
             foreach (Children c in littleChild) //For each child on the list
             {
-                if (c.rest < 1200 && c.rest > 750) //Changing each child's colour if they reach certain time laps (Less than 18 seconds)
+                if (c.rest < 1000 && c.rest > 500) //Changing each child's colour if they reach certain time laps (Less than 18 seconds)
                 {
                     e.Graphics.FillEllipse(Brushes.Green, c.x, c.y, c.size, c.size);
                 }
 
-                if (c.rest < 750 && c.rest > 300) //Less than 15 seconds, but more than 10 seconds
+                if (c.rest < 500 && c.rest > 300) //Less than 15 seconds, but more than 10 seconds
                 {
                     e.Graphics.FillEllipse(Brushes.Orange, c.x, c.y, c.size, c.size);
                 }

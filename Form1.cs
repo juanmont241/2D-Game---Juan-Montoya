@@ -13,7 +13,7 @@ namespace _2D_Game___Juan_Montoya
 
     //Juan Montoya
     //Made in March 25th 2022
-    //2D Game - Deliver Cake to the Children!
+    //2D Game - Deliver Cake to the Children! 
 
     public partial class Form1 : Form
     {
@@ -24,10 +24,10 @@ namespace _2D_Game___Juan_Montoya
             FormBorderStyle = FormBorderStyle.None; //Makes the form to fullscreen
             WindowState = FormWindowState.Maximized;
 
-            ChangeScreen(this, new MenuScreen()); //When the program starts, it instaly changes the screen to Menuscreen
+            ChangeScreen(this, new MenuScreen()); //When the program starts, it instantly changes the screen to the MenuScreen
         }
 
-        public static void ChangeScreen(object sender, UserControl next) //Code of change from screen to screen
+        public static void ChangeScreen(object sender, UserControl next) //Function code to change from screen to screen
         {
             Form f; 
             if (sender is Form)
@@ -42,7 +42,7 @@ namespace _2D_Game___Juan_Montoya
             }
 
             next.Location = new Point((f.ClientSize.Width - next.Width) / 2, (f.ClientSize.Height - next.Height) / 2);
-            f.Controls.Add(next);
+            f.Controls.Add(next); //Had an issue with this line of code relating with the GameOverScreen making the error NullReferenceException (Fixed by moving the function out of an eachloop)
             next.Focus();
         }
     }

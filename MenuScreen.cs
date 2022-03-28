@@ -22,7 +22,7 @@ namespace _2D_Game___Juan_Montoya
         {
            GameScreen.difficuly = 5; //Declares the difficuly number 
            GameScreen.lives = 3; //Declares how mnay lives the player has
-           Form1.ChangeScreen(this, new GameScreen()); //Change Screen from Menuscreen to Gamescreen
+           Form1.ChangeScreen(this, new GameScreen()); //Change Screen from MenuScreen to GameScreen
         }
 
         private void buttonMedium_Click(object sender, EventArgs e) // Button coding for the "Medium" Difficuly
